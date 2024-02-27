@@ -61,7 +61,7 @@ function App() {
 
     const storedIds = JSON.parse(localStorage.getItem("selectedPlaces")) || [];
     localStorage.setItem(
-      "selectedPlace",
+      "selectedPlaces",
       JSON.stringify(storedIds.filter((id) => id !== selectedPlace.current))
     );
   }
